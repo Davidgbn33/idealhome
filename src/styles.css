@@ -1,0 +1,255 @@
+/*general*/
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-size: 62.5%;
+}
+body {
+  font-family: var(--roboto);
+  margin: auto;
+  background: var(--graylight);
+}
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+h2 {
+  font-size: 3rem;
+  font-family: var(--shantell);
+  padding: 2rem 0 2rem 2rem;
+}
+.underline {
+  width: 100px;
+  border: 1px solid var(--black);
+  margin: 1rem auto;
+}
+.containeur {
+  min-height: 100vh;
+}
+/* header */
+.header {
+  background: var(--dark);
+  display: flex;
+  justify-content: space-between;
+}
+.header .logo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  color: var(--or);
+  font-size: 6rem;
+  font-family: var(--shantell);
+}
+.header .logo i {
+  font-size: 3rem;
+  padding: 0 1rem 0 2rem;
+}
+.header .nav {
+  display: flex;
+  align-items: center;
+  padding-right: 1rem;
+}
+
+.header .nav a {
+  color: var(--white);
+  margin: 0 2rem;
+  font-size: 2rem;
+}
+
+/*main*/
+
+.main {
+  display: flex;
+  flex-direction: column;
+}
+.main .accueil {
+  background: url(../img/frame.jpg) center center / cover;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+.main .accueil .text {
+  margin: auto;
+  width: 600px;
+}
+.main .accueil .text h1 {
+  font-size: 5rem;
+  color: var(--white);
+  letter-spacing: 0.5rem;
+}
+.main .accueil .text h1 strong {
+  font-weight: 400;
+  font-size: 5rem;
+  color: var(--or);
+}
+.main .accueil .text p {
+  padding-top: 2rem;
+  font-size: 3rem;
+  color: var(--white);
+}
+/* offre */
+
+.main .offre {
+  background: var(--graylight);
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+  padding-bottom: 1rem;
+}
+.main .offre .elem {
+  width: 300px;
+  padding: 1rem;
+  color: var(--dark);
+  font-size: 2rem;
+  text-align: center;
+  border: 1px solid var(--black);
+  border-radius: 5px;
+  box-shadow: 3px 3px var(--black);
+}
+.main .offre .elem img {
+  width: 100%;
+}
+.main .offre .elem .elem1 {
+  font-size: 2rem;
+  padding: 1rem;
+}
+.main .offre .elem .elem1 p {
+  padding: 0.2rem;
+}
+/*equipe*/
+
+.main .equipe {
+  height: 300px;
+  display: flex;
+  flex-flow: row nowrap;
+}
+.equipe-img {
+  flex: 1;
+  background: url(../img/team.jpg) center center / cover;
+}
+.equipe-text {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  background: var(--dark);
+  font-size: 2rem;
+  color: var(--white);
+  padding: 0 1rem;
+}
+.equipe-text h3 {
+  padding-top: 2rem;
+  font-size: 2.5rem;
+}
+.equipe-text h3 strong {
+  font-weight: 400;
+  font-size: 2.5rem;
+  color: var(--or);
+}
+.equipe-text p {
+  padding-top: 2rem;
+  font-size: 1.5rem;
+  text-align: justify;
+  line-height: 2rem;
+}
+
+/*blog*/
+.main .blog .grid-container {
+  display: grid;
+  grid:
+    "a b c" auto
+    "d e f" auto
+    / 1fr 1fr 1fr;
+  background: var(--graylight);
+  padding-bottom: 2rem;
+}
+.blog-text {
+  display: flex;
+  align-items: center;
+  font-size: 2rem;
+  padding: 1rem;
+}
+
+.blog-profil {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+.blog-profil p,
+em {
+  color: var(--gray);
+  font-size: 1.5rem;
+}
+.blog-profil img {
+  width: 50px;
+  border-radius: 50%;
+}
+.blog-orga {
+  display: flex;
+  border: 1px solid var(--dark);
+  margin: 1rem;
+  box-shadow: 3px 3px;
+}
+.blog .blog1 {
+  grid-area: a;
+}
+.blog .blog2 {
+  grid-area: b;
+}
+.blog .blog3 {
+  grid-area: c;
+}
+.blog .blog4 {
+  grid-area: d;
+}
+.blog .blog5 {
+  grid-area: e;
+}
+.blog .blog6 {
+  grid-area: f;
+}
+
+/*contact*/
+.main .contact {
+  font-size: 3rem;
+  background: var(--dark);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: var(--white);
+  padding: érem 0 4rem 0;
+  height: 150px;
+}
+.main .contact h2 strong {
+  font-weight: 400;
+  font-size: 3.5rem;
+  color: var(--or);
+}
+.main .contact a {
+  text-decoration: none;
+  color: white;
+  font-size: 2rem;
+  padding: 1rem 3rem;
+  border: 1px solid var(--white);
+  border-radius: 20px;
+}
+/*footer*/
+footer {
+  font-size: 1.5rem;
+  height: 50px;
+  background: var(--blacklight);
+  text-align: center;
+}
+footer p {
+  color: var(--white);
+  padding-top: 2rem;
+}

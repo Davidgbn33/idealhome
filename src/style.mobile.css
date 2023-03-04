@@ -1,0 +1,53 @@
+@media (max-width: 500px) {
+  .header {
+    flex-direction: column;
+  }
+  .header .nav {
+    flex-direction: column;
+  }
+  .header .logo p {
+    padding-bottom: 2rem;
+  }
+  .header .nav a {
+    padding-bottom: 2rem;
+  }
+  .main .accueil {
+    min-height: 680px;
+  }
+  .main .accueil .text {
+    margin: auto;
+    width: auto;
+  }
+  .main .accueil .text h1 {
+    font-size: 3rem;
+    letter-spacing: 0;
+    padding: 0 1rem;
+  }
+  .main .accueil .text h1 strong {
+    font-size: 3rem;
+  }
+  .main .offre {
+    flex-flow: column nowrap;
+    align-items: center;
+  }
+  .main .offre .elem {
+    margin: 1rem;
+  }
+  .main .equipe {
+    flex-flow: column nowrap;
+  }
+  .main .blog .grid-container {
+    display: grid;
+    grid:
+      "a" auto
+      "b" auto
+      "c" auto
+      "d" auto
+      "e" auto
+      "f" auto
+      / 1fr;
+  }
+  .main .contact {
+    height: 150px;
+  }
+}
